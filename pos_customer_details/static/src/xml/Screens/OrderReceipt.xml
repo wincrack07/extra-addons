@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+  <t t-name="customerdetails.OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('pos-receipt-contact')]" position="after">
+            <t t-if="env.pos.config.pos_show_customer_details">
+            <div class="icimakis_extra">
+              <t t-if="receipt.partner">
+                <br/>
+                <t t-if="receipt.partner.name">
+                    <div>Client: <t t-esc="receipt.partner.name"/></div>
+                </t>
+                <t t-if="receipt.partner.phone">
+                    <div>Phone: <t t-esc="receipt.partner.phone"/></div>
+                </t>              
+                <t t-if="receipt.partner.address">
+                    <div>Address: <t t-esc="receipt.partner.address"/></div>
+                </t>
+              </t>
+            </div>
+            </t>
+        </xpath>
+  </t>
+</templates>
