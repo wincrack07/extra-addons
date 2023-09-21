@@ -10,7 +10,7 @@
     "license": "Other proprietary",
     'sequence': 10,     
     'version': '0.16.23.09.06',
-    'depends': ['base','account','alphabot_fel_localization','alphabot_fel_settings'],
+    'depends': ['base','account','alphabot_licencia','alphabot_fel_localization','alphabot_fel_settings'],
     'data': [
         'data/alphabot_seq.xml',
         'data/automatic_fel.xml',

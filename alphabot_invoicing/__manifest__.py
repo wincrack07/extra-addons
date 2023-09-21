@@ -10,7 +10,7 @@
     "license": "Other proprietary",
     'sequence': 10,
     'version': '0.16.23.04.08',
-    'depends': ['base','account'],
+    'depends': ['base','account','alphabot_licencia'],
     #'depends': ['base', 'account'],
     'data': [
         'views/account_invoice_view.xml',
